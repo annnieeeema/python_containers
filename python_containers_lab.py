@@ -50,3 +50,32 @@ for key, val in home_town.items():
 
 # Exercise 6
 # Create an empty list named cohort. Using a for loop, add one dictionary to the cohort list for each student name. Iterate over cohort printing out each element. 
+"""
+cohort = []
+
+cohort.extend([{ 'student': 'Ryan', 'fav_food': 'strawberries'}, { 'student': 'Annie', 'fav_food': 'porkbelly'}, { 'student': 'Jun', 'fav_food': 'dumplings'}, { 'student': 'Jacky', 'fav_food': 'rice'}, { 'student': 'Jerry', 'fav_food': 'cereal'}])
+
+for each_student in cohort:
+    print(each_student)
+"""
+
+# Exercise 7 
+# Using the list of students and list comprehension, assign to a variable named awesome_students a new list containing strings similar to this: ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]. Iterate over awesome_students printing out each string. 
+"""
+students = ['Ryan', 'Annie', 'Jun', 'Jacky', 'Jerry']
+
+awesome_students = [(f"{student} is awesome!") for student in students]
+
+for awesomesauce in awesome_students:
+    print(awesomesauce)
+"""
+
+# Exercise 8 
+# Using the tuple foods and list comprehension within a for loop, print each food string that contains the letter a. 
+"""
+foods = ('strawberries', 'porkbelly', 'dumplings', 'rice', 'cereal')
+
+for food in foods:
+    if 'a' in food:
+        print(food)
+"""
